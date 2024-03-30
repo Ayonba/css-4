@@ -1,0 +1,139 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mh{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    width: 300px;
+    height: 300px;
+    
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(bike.png);
+    background-size: cover;
+   
+}
+
+#mh .bh{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(76, 235, 27);
+    border-radius: 50%;
+
+    animation: ayon 1.3s infinite  linear;
+}
+@keyframes ayon{
+    0%{
+       opacity: 0;
+       width: 85px;
+       height: 85px;
+    
+    }
+    50%{
+        opacity: 0.9;
+        width: 100px;
+       height: 100px;
+
+    }
+    100%{
+        opacity: 0;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+#ft{
+    margin-top: -300px;
+    margin-left: 15px; 
+
+    width: 300px;
+    height: 300px;
+   
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.ss{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(84, 14, 214);
+    border-radius: 50%;
+    color: rgb(192, 189, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.ss:hover{
+    background-color: rgb(216, 24, 24);
+    color: black;
+}
+
+#ayon{
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 200px;
+    height: 115px;
+    
+    
+    background-image: url(t.png);
+    background-size: cover;
+    
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+#ayon #lefter__top{
+    width: 50px;
+    height: 50px;
+    
+    border-top: 5px solid;
+    border-right: 5px solid;
+
+    margin-left: 180px;
+
+    transition: 0.4s;
+}
+
+#ayon #righter__bottom{
+    width: 40px;
+    height: 40px;
+    
+    border-bottom: 5px solid;
+    border-left: 5px solid;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+#ayon:hover #righter__bottom{
+    width: 290px;
+    height: 140px;
+   
+    margin-top: -100px;
+}
+
+#ayon:hover #lefter__top{
+    width: 290px;
+    height: 140px;
+   
+    margin-left: -12px;
+}
